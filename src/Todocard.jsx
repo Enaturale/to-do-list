@@ -11,16 +11,18 @@ const TodoCard = (props) => {
   let history = useHistory();
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  //function to handle the delete button when clicked
+  //function to handle the delete button when clicked. To open the options for confirm and cancel buttons
   function deleteHandler(){
     console.log("Delete button clicked");
     setModalIsOpen(true);
   }
 
+//function to handle the closing on the modal when the backdrop or buttons on the modal are tapped
   function closeModalHandler(){
     setModalIsOpen(false);
   }
 
+//the card which returns each to-do on the list.
   return (
     <div className = 'todoWrapper'>
     <div onClick={() => history.push(`/todo/${id}`)} className = 'card'>

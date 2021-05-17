@@ -9,6 +9,8 @@ import { CircularProgress } from "@material-ui/core";
 const Todos = () => {
   //creating a state variable for our todos
   const [todos, setTodos] = useState();
+  
+    //fetching the to-do list from the placeholder using axios
   useEffect(() => {
     axios.get("https://jsonplaceholder.typicode.com/todos").then((res) => {
       const responseTodos = res.data;

@@ -10,7 +10,10 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 export default function App() {
   return (
     <div className="App">
+    {/* Adding the header from the layout folder and design js file */}
     <Designtodo />
+    
+    {/* Enabling the route and switch between paths       */}    
      <Router>
        <Switch>
          <Route exact path ="/" children ={<Todos />} />

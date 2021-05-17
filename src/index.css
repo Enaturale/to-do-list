@@ -56,6 +56,7 @@ body{
   margin-left: 25rem;
   font-weight: bold;
   font-size: larger;
+  border-radius: 2px;
 }
 
 .btnAlt{
@@ -71,7 +72,7 @@ body{
 
 .todoWrapper{
   height: 180px;
-  background-color:dimgrey;
+  background-color:darksalmon;
   width: 540px;
   border-radius: 4px;
 }
@@ -80,7 +81,14 @@ body{
 .singleTodo{
  background-color: white;
  width: 700px;
- height: auto;
+ height: 15rem;
  margin-left: 200px;
  margin-top: 20px;
+ border-radius: 4px;
+}
+
+.singledo{
+  margin-left: 30px;
+  margin-top: 3rem;
+  margin-bottom: 0;
 }

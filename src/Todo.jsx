@@ -9,6 +9,7 @@ const Todo = () => {
 
   const [todoDetails, setTodoDetails] = useState();
 
+  //fetching the to-do list from the placeholder using axios
   useEffect(() => {
     axios
       .get(`https://jsonplaceholder.typicode.com/todos/${id}`)
@@ -20,11 +21,12 @@ const Todo = () => {
 
   const { id:todoId, userId, title, completed } = todoDetails || {};
 
+//showing the item based on id 
   return (
     //   <p>{`This id the TODO component and the TODO ID is: ${id}`}</p>;
-    <div>
+    <div className = 'singleTodo'>
       {todoDetails ? (
-        <div className = 'singleTodo'>
+        <div  className ='singledo'>
           <h1>{`Todo id : ${todoId}`}</h1>
           <h1>{`Todo userId : ${userId}`}</h1>
           <h1>{`Todo Title : ${title}`}</h1>

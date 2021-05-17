@@ -8,7 +8,7 @@ function Modal(props){
     function confirmButton(){
         props.onConfirm();
     }
-
+//the page that shows up with two buttons (confirm and cancel) when the delete button from the list of to-do list is clicked
     return(
         <div className = {classes.modal}>  
             <p style = {{fontSize: '30px'}}>Hey, are you sure?</p>
