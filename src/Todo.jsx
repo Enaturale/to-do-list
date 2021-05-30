@@ -9,7 +9,7 @@ const Todo = () => {
 
   const [todoDetails, setTodoDetails] = useState();
 
-  //fetching the to-do list from the placeholder using axios
+  //fetching the to-do list from the placeholder using axios based on id
   useEffect(() => {
     axios
       .get(`https://jsonplaceholder.typicode.com/todos/${id}`)

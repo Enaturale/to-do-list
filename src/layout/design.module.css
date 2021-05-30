@@ -4,19 +4,20 @@
     font-family: sans-serif;
     margin-bottom: 0px;
     margin-top: 2px;
+    margin-left: 12rem;
     
 }
 
 .container{
     height: 60px;
-    background-color: firebrick;
+    background-color: #1520A6;
     margin-bottom: 10px;    
 }
 
 .btn{
     font: inherit;
     cursor: pointer;
-    background-color: firebrick ;
+    background-color: #1520A6;
     color: white;
     border: 1px solid burlywood;
     margin-top: 10px;
@@ -63,4 +64,11 @@
     position: fixed;
     top: 20vh;
     left: calc(50% - 15rem);
+  }
+
+  todoBtn{
+    font: inherit;
+    cursor: pointer;
+    
+    
   }

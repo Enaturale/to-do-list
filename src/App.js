@@ -6,12 +6,14 @@ import Designtodo from './layout/design'
 
 //importing router
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import AddTodo from "./layout/AddTodo";
 
 export default function App() {
   return (
     <div className="App">
     {/* Adding the header from the layout folder and design js file */}
     <Designtodo />
+    <AddTodo />
     
     {/* Enabling the route and switch between paths       */}    
      <Router>
